@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Swastha Raksa",
   tagline: "Dokumentasi Swastha Raksa",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.png",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
@@ -17,8 +17,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "swastha-raksa", // Usually your GitHub org/user name.
+  projectName: "swastha-raksa", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/ikhsanytc/dokumentasi-swastha-raksa/tree/main",
         },
         blog: {
           showReadingTime: true,
@@ -71,7 +71,7 @@ const config: Config = {
       title: "Swastha Raksa",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
         {
@@ -82,7 +82,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/ikhsanytc/dokumentasi-swastha-raksa",
           label: "GitHub",
           position: "right",
         },
@@ -95,7 +95,7 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
+              label: "Tutor bang",
               to: "/docs/intro",
             },
           ],
@@ -126,12 +126,12 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/ikhsanytc/dokumentasi-swastha-raksa",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Swastha Raksa.`,
     },
     prism: {
       theme: prismThemes.github,
