@@ -11,7 +11,7 @@ Hal-hal yg perlu disiapkan :
 - Uid : **Wajib**
 
 ```javascript title="fetch.js"
-async function login() {
+async function checkUidKtp() {
   const data = await fetch(
     "http://localhost:8080/api/check_uid_ktp/(uid ktp nya)",
     {

@@ -18,7 +18,7 @@ Hal-hal yg perlu disiapkan:
 Cara untuk fetch api nya.
 
 ```javascript title="fetch.js"
-async function login() {
+async function editProfile() {
   const formData = new FormData();
   formData.append("username", "ini opsional");
   formData.append("password", "ini opsional");
