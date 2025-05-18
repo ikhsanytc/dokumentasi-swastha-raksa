@@ -10,13 +10,28 @@ Hal-hal yg perlu disiapkan:
 
 - Token : **Wajib**
 - Uid buyer : **Wajib**
-- Id produk : **Wajib**
+- Products : **Wajib**
+
+Parameter products harus berupa json string, contoh:
+
+```json
+[
+  { "id_produk": 1, "jumlah_produk": 2 },
+  { "id_produk": 2, "jumlah_produk": 1 }
+]
+```
 
 ```javascript
 async function addTransactio() {
+  const products = [
+    {
+      id_produk: 1,
+      jumlah_produk: 2,
+    },
+  ];
   const formData = new FormData();
   formData.append("uid_buyer", "isi sendiri");
-  formData.append("id_produk", "isi sendiri");
+  formData.append("products", JSON.stringify(products));
   const res = await fetch("http://localhost:8080/api/add_transaction", {
     method: "POST",
     headers: {
